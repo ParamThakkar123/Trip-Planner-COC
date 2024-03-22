@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 
 const Makeplan = () => {
+
   return (
     <div>
       <h1 className='text-3xl text-center mt-16'>Plan a new Trip</h1>
@@ -14,9 +15,10 @@ const Makeplan = () => {
         <Input type='text' className='rounded mt-3'/>
       </div>
       <div>
+        <button>Invite Tripmates</button>
         <div className='p-6'>
-           <label htmlFor="invite">Invite Tripmates by email</label>
-           <Input type='email' className='rounded mt-3'/>
+            <label htmlFor="invite">Invite Tripmates by email</label>
+            <Input type='email' className='rounded mt-3'/>
         </div>
       </div>
       <div className='flex items-center justify-center'>
