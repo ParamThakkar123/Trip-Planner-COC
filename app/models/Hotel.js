@@ -3,23 +3,11 @@ import mongoose from "mongoose";
 const {Schema} = mongoose;
 
 const HotelSchema = new Schema({
-    id:{
-        type: String,
-        required: true
-    },
-    userId:{
-        type: String,
-        required: true
-    },
     title:{
         type: String,
         required: true
     },
     description:{
-        type: String,
-        required: true
-    },
-    image:{
         type: String,
         required: true
     },
@@ -95,14 +83,9 @@ const HotelSchema = new Schema({
         type: Date,
         default: Date.now
     },
-    rooms:{
-        type: Array,
-        default: []
-    },
-    bookings:{
-        type: Array,
-        default: []
-    }
+    rooms:[],
+    bookings:[]
 }, {timestamps: true})
 
-export default mongoose.model("hotel", HotelSchema);
+const Hotel =  mongoose.model("hotels", HotelSchema);
+export default Hotel;

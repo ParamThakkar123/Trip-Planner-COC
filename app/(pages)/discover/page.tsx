@@ -6,7 +6,9 @@ const Discover = () => {
   return (
     <div>
     <div className='h-screen'>
-      <Navbar/>
+      <div className='absolute z-10'>
+            <Navbar />
+          </div>
       <img src="./images/london2.jpg" alt="ny" className='h-screen w-screen absolute'/>
       <div className='relative flex flex-col items-center justify-center text-white'>
         <span className='mt-48 text-3xl'>Discover</span>

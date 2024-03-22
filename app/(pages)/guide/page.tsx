@@ -1,7 +1,6 @@
-"use client"
 import React from 'react'
 
-const AddHotelForm = () => {
+const Guide = () => {
   return (
     <div>
       
@@ -9,4 +8,4 @@ const AddHotelForm = () => {
   )
 }
 
-export default AddHotelForm
+export default Guide

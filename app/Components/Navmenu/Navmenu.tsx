@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { ChevronsUpDown, Plus, Hotel, BookOpenCheck } from "lucide-react"
+
 import { Button } from "@/components/ui/button"
 import {
   DropdownMenu,
@@ -9,6 +9,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { BookOpenCheck, ChevronsUpDown, Hotel, Plus } from "lucide-react"
 import { useRouter } from "next/navigation"
 
 export function Navmenu() {
@@ -17,17 +18,17 @@ export function Navmenu() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="outline" size="icon" className="rounded">
-            <ChevronsUpDown />
+          <ChevronsUpDown/>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="rounded text-white">
-        <DropdownMenuItem className="cursor-pointer flex gap-2 items-center" onClick={() => router.push('/hotels/new')}>
-         <Plus size={15}/> <span>Add Hotel</span>
+        <DropdownMenuItem className="cursor-pointer flex gap-2 items-center" onClick={() => router.push('/addHotel')}>
+          <Plus size={15}/> <span>Add Hotel</span>
         </DropdownMenuItem>
-        <DropdownMenuItem className="cursor-pointer flex gap-2 items-center" onClick={() => router.push('/hotels/my-hotels')}>
-          <Hotel size={15}/> <span>My Hotels</span>
+        <DropdownMenuItem className="cursor-pointer flex gap-2 items-center" onClick={() => router.push('/myHotels')}>
+         <Hotel size={15}/> <span>My Hotels</span>
         </DropdownMenuItem>
-        <DropdownMenuItem className="cursor-pointer flex gap-2 items-center" onClick={() => router.push('/hotels/my-bookings')}>
+        <DropdownMenuItem className="cursor-pointer flex gap-2 items-center" onClick={() => router.push('/myBookings')}>
           <BookOpenCheck size={15}/> <span>My Bookings</span>
         </DropdownMenuItem>
       </DropdownMenuContent>

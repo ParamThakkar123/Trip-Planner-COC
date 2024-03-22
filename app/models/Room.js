@@ -3,20 +3,16 @@ import mongoose from "mongoose";
 const {Schema} = mongoose;
 
 const RoomSchema = new Schema({
-    id:{
-        type: String,
-        required: true
-    },
-    userId:{
-        type: String,
-        required: true
-    },
     title:{
         type: String,
         required: true
     },
     description:{
         type: String,
+        required: true
+    },
+    phonenumber:{
+        type: Number,
         required: true
     },
     bedCount:{
@@ -39,10 +35,7 @@ const RoomSchema = new Schema({
         type: Number,
         required: true
     },
-    Image:{
-        type: String,
-        required: true
-    },
+    imageurls:[],
     breakfastPrice:{
         type: Number,
         required: true
@@ -87,14 +80,7 @@ const RoomSchema = new Schema({
         type: Boolean,
         default: false
     },
-    hotelId:{
-        type: String,
-        required: true
-    },
-    booking:{
-        type: Array,
-        default: []
-    }
+    currentBookings:[]
 }, {timestamps: true})
 
 export default mongoose.model("room", RoomSchema);

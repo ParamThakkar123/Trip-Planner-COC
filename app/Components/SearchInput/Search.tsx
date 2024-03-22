@@ -7,7 +7,7 @@ const SearchInput = () => {
   return (
     <div className='relative sm:block hidden'>
       <Search className='absolute h-4 w-4 top-3 left-4 text-muted-foreground'/>
-      <Input placeholder='Search Hotels' className='pl-10 rounded bg-primary/10'/>
+      <Input placeholder='Search' className='pl-10 rounded bg-primary/10'/>
     </div>
   )
 }
