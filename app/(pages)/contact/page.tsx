@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from '@/app/Components/Navbar/Navbar'
 import '../(auth)/login/login.css'
 
-
 const Contact = () => {
   return (
     <div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import '../(auth)/login/login.css'
 
 const About = () => {
   return (

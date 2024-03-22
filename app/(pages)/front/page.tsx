@@ -2,6 +2,7 @@
 import React, { useMemo } from 'react'
 import Navbar from '@/app/Components/Navbar/Navbar'
 import Second from './div2'
+import '../(auth)/login/login.css'
 
 const Front = () => {
     const renderVideo = useMemo(
