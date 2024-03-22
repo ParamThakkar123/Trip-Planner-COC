@@ -11,20 +11,23 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className='flex top-0 items-center uppercase justify-between p-6 text-2xl absolute text-white z-10 gap-96'>
+        <div className='flex top-0 items-center uppercase justify-between p-6 text-xl absolute text-white z-10 gap-96'>
             <div className='logo'>
                 Logo
             </div>
             <div className='menu'>
                 <ul className='flex items-center justify-center'>
-                    <li className='mr-4 ml-6 hover:bg-white hover:text-black hover:rounded transition-all duration-200 p-2'>
+                    <li className='mr-4 ml-8 hover:bg-white hover:text-black hover:rounded transition-all duration-200 p-2'>
                         <Link href='/'>Home</Link>
                     </li>
-                    <li className='mr-5 hover:bg-white hover:text-black hover:rounded transition-all duration-200 p-2'>
+                    <li className='mr-4 hover:bg-white hover:text-black hover:rounded transition-all duration-200 p-2'>
                         <Link href='/about'>About</Link>
                     </li>
-                    <li className='mr-5 hover:bg-white hover:text-black hover:rounded transition-all duration-200 p-2'>
+                    <li className='mr-4 hover:bg-white hover:text-black hover:rounded transition-all duration-200 p-2'>
                         <Link href='/discover'>Discover</Link>
+                    </li>
+                    <li className='mr-4 hover:bg-white hover:text-black hover:rounded transition-all duration-200 p-2'>
+                      <Link href='/contact'>Contact</Link>
                     </li>
                 </ul>
             </div>

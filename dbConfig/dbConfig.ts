@@ -1,21 +1,18 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
-export async function connect() {
-    try {
-        mongoose.connect(process.env.MONGO_URI!);
-        const connection = mongoose.connection;
 
-        connection.on('connected', () => {
-            console.log('MongoDB connected successfully');
-        })
+const connect = async () => {
+  if (mongoose.connections[0].readyState) return;
 
-        connection.on('error', (err) => {
-            console.log('MongoDB connection error. Please make sure MongoDB is running. ' + err);
-            process.exit();
-        })
+  try {
+    await mongoose.connect(process.env.MONGODB_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log("Mongo Connection successfully established.");
+  } catch (error) {
+    throw new Error("Error connecting to Mongoose");
+  }
+};
 
-    } catch (error) {
-        console.log('Something goes wrong!');
-        console.log(error);        
-    }
-}
+export default connect;
