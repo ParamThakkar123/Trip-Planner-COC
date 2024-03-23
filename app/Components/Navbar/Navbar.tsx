@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Link from 'next/link';
 import gsap from 'gsap';
 import { ModeToggle } from '../Themetoggle/Theme-toggle';
+import { LoginSignupDropDown } from '../../Components/LoginSignupDropdown/LoginSignupDropDown'
 
 const Navbar = () => {
     useEffect(() => {
@@ -12,7 +13,7 @@ const Navbar = () => {
 
     return (
       <div>
-        <div className='flex top-0 items-center uppercase justify-between p-6 text-xl text-white z-10 gap-96'>
+        <div className='flex top-0 items-center uppercase justify-between p-6 text-lg text-white z-10 gap-96'>
         <div className='logo'>
         <img src="/images/travel_logo.png" alt="Logo" style={{ borderRadius: '50%', width: '20%' }} />
 
@@ -24,16 +25,16 @@ const Navbar = () => {
                         <Link href='/'>Home</Link>
                     </li>
                     <li className='mr-2 hover:bg-white hover:text-black hover:rounded transition-all duration-200 p-2'>
-                        <Link href='/about'>Connect</Link>
+                        <Link href='/about'>About</Link>
                     </li>
                     <li className='mr-2 hover:bg-white hover:text-black hover:rounded transition-all duration-200 p-2'>
-                      <Link href='/cottage'>CottageConnect</Link>
+                      <Link href='/cottage'>Contact</Link>
                     </li>
                     <li className='mr-2 hover:bg-white hover:text-black hover:rounded transition-all duration-200 p-2'>
                         <Link href='/discover'>Discover</Link>
                     </li>
                     <li className='mr-2 hover:bg-white hover:text-black hover:rounded transition-all duration-200 p-2'>
-                      <Link href='/contact'>Contact</Link>
+                      <Link href='/itinerary'>Itineraries</Link>
                     </li>
                 </ul>
             </div>
@@ -42,11 +43,8 @@ const Navbar = () => {
                     <li>
                       <ModeToggle />
                     </li>
-                    <li className=''>
-                        <Link href='/login'>Login</Link>
-                    </li>
-                    <li className=''>
-                        <Link href='/signup'>Signup</Link>
+                    <li>
+                      <LoginSignupDropDown />
                     </li>
                 </ul>
             </div>

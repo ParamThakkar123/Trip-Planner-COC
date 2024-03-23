@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import { Input } from '@/components/ui/input';
+import Navbar from '@/app/Components/Navbar/Navbar';
 
 const Flights = () => {
   const [sourceAirportCode, setSourceAirportCode] = useState('');
@@ -19,7 +20,7 @@ const Flights = () => {
       const response = await fetch(`https://tripadvisor16.p.rapidapi.com/api/v1/flights/searchFlights?sourceAirportCode=${sourceAirportCode}&destinationAirportCode=${destinationAirportCode}&date=${date}&itineraryType=${itineraryType}&sortOrder=${sortOrder}&numAdults=${numAdults}&numSeniors=${numSeniors}&classOfService=${classOfService}&pageNumber=1&currencyCode=USD`, {
         method: 'GET',
         headers: {
-          'X-RapidAPI-Key': '5a150e53afmsh2c79a63d07c885fp13a612jsne80043866a64',
+          'X-RapidAPI-Key': '32ace67f35msha72ff53404bf993p192ffejsn390efe1c3050',
           'X-RapidAPI-Host': 'tripadvisor16.p.rapidapi.com'
         }
       });
@@ -32,6 +33,16 @@ const Flights = () => {
 
   return (
     <div>
+        <div className='h-screen'>
+      <div className='absolute z-10'>
+            <Navbar />
+          </div>
+      <img src="./images/flight.jpg" alt="ny" className='h-screen w-screen absolute'/>
+      <div className='relative flex flex-col items-center justify-center text-white'>
+        <span className='mt-48 text-3xl'>Book Flights with ease</span>
+        <p className='text-2xl mt-24 text-center tracking-wide'>Search all flights according to your requirements <br /> and get the cheapest flights here</p>
+      </div>
+    </div>
       <form onSubmit={handleSubmit} className='p-6 flex flex-col gap-4'>
         <div>
             <label htmlFor="sourceAirport">Enter Source Airport Code</label>
