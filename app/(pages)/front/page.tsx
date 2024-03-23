@@ -29,7 +29,7 @@ const Front = () => {
                 where your travel dreams take flight! We believe that every journey begins with a single step, and we're here to guide you through every stage of your adventure planning.
             </p>
             <Button className='text-2xl bg-white text-black rounded p-2 hover:bg-gray-200 transition-all duration-300'>
-              <Link href='http://127.0.0.1:3001/plan.html'>Start Planning</Link>   
+              <Link href='/makeplan'>Start Planning</Link>   
             </Button>
         </div>
       </div>

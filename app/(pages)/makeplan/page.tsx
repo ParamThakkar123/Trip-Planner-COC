@@ -1,35 +1,34 @@
-"use client"
-import React, { useState } from 'react'
-import { Input } from '@/components/ui/input'
-import Link from 'next/link'
-import { Button } from '@/components/ui/button'
+import React from 'react';
 
-const Makeplan = () => {
-
+const VisualTravelGuide = () => {
   return (
-    <div>
-      <h1 className='text-3xl text-center mt-16'>Plan a new Trip</h1>
-      <form action="">
-      <div className='p-6'>
-        <label htmlFor="destination">Destination</label>
-        <Input type='text' className='rounded mt-3'/>
-      </div>
-      <div>
-        <button>Invite Tripmates</button>
-        <div className='p-6'>
-            <label htmlFor="invite">Invite Tripmates by email</label>
-            <Input type='email' className='rounded mt-3'/>
-        </div>
-      </div>
-      <div className='flex items-center justify-center'>
-        <Button className='bg-blue-600 hover:bg-blue-700 transition-all duration-300 text-white text-xl rounded'>Start Planning</Button>
-      </div>
-      <Link href='/guide' className='flex items-center justify-center mt-2'>
-      <span className='text-center text-gray-500 font-semibold hover:text-black transition-all duration-150'>Or write a guide</span>
-      </Link>
-      </form>
-    </div>
-  )
+    <html>
+      <head>
+        <meta charSet="utf-8" />
+        <meta name="description" content="Travel guide" />
+        <meta name="keywords" content="speech-language, multi-modal, LLM, LLaVA" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Visual travel Guide</title>
+        <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
+        <link rel="stylesheet" href="./static/css/bulma.min.css" />
+        <link rel="stylesheet" href="./static/css/bulma-carousel.min.css" />
+        <link rel="stylesheet" href="./static/css/bulma-slider.min.css" />
+        <link rel="stylesheet" href="./static/css/fontawesome.all.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+        <link rel="stylesheet" href="./static/css/index.css" />
+        <link rel="icon" href="./static/images/favicon.svg" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer src="./static/js/fontawesome.all.min.js"></script>
+        <script src="./static/js/bulma-carousel.min.js"></script>
+        <script src="./static/js/bulma-slider.min.js"></script>
+        <script src="./static/js/index.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+      </head>
+      <body>
+        <iframe src="https://travelmapper.net" style={{ width: '100%', height: '100%', border: 0, position: 'absolute', marginBottom: '10px' }}></iframe>
+      </body>
+    </html>
+  );
 }
 
-export default Makeplan
+export default VisualTravelGuide;
