@@ -13,9 +13,11 @@ const Navbar = () => {
     return (
       <div>
         <div className='flex top-0 items-center uppercase justify-between p-6 text-xl text-white z-10 gap-96'>
-            <div className='logo'>
-                Logo
-            </div>
+        <div className='logo'>
+        <img src="/images/travel_logo.png" alt="Logo" style={{ borderRadius: '50%', width: '20%' }} />
+
+        </div>
+
             <div className='menu'>
                 <ul className='flex items-center justify-center'>
                     <li className='mr-2 ml-8 hover:bg-white hover:text-black hover:rounded transition-all duration-200 p-2'>
