@@ -9,7 +9,7 @@ import Link from 'next/link'
 const Front = () => {
     const renderVideo = useMemo(
         () => (
-            <video src="videos/waves.mp4" autoPlay muted loop className='absolute inset-0 w-full h-full object-cover opacity-90' preload='auto' />
+            <video src="videos/waves.mp4" autoPlay muted loop className='absolute inset-0 w-full h-full object-cover opacity-65' preload='auto' />
         ),
         []
     )

@@ -36,6 +36,7 @@ const Navbar = () => {
                     <li className='mr-2 hover:bg-white hover:text-black hover:rounded transition-all duration-200 p-2'>
                       <Link href='/itinerary'>Itineraries</Link>
                     </li>
+                    
                 </ul>
             </div>
             <div className='authmenu'>
