@@ -25,7 +25,7 @@ const SearchInput = () => {
             const response = await fetch(`https://tripadvisor16.p.rapidapi.com/api/v1/hotels/searchLocation?query=${location}`, {
                 method: 'GET',
                 headers: {
-                    'X-RapidAPI-Key': '5a150e53afmsh2c79a63d07c885fp13a612jsne80043866a64',
+                    'X-RapidAPI-Key': '0267b71b04mshb40fe9be89fb456p142510jsn8dde394521f5',
                     'X-RapidAPI-Host': 'tripadvisor16.p.rapidapi.com'
                 }
             });

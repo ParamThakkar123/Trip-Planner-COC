@@ -20,7 +20,7 @@ const Flights = () => {
       const response = await fetch(`https://tripadvisor16.p.rapidapi.com/api/v1/flights/searchFlights?sourceAirportCode=${sourceAirportCode}&destinationAirportCode=${destinationAirportCode}&date=${date}&itineraryType=${itineraryType}&sortOrder=${sortOrder}&numAdults=${numAdults}&numSeniors=${numSeniors}&classOfService=${classOfService}&pageNumber=1&currencyCode=USD`, {
         method: 'GET',
         headers: {
-          'X-RapidAPI-Key': '32ace67f35msha72ff53404bf993p192ffejsn390efe1c3050',
+          'X-RapidAPI-Key': '0267b71b04mshb40fe9be89fb456p142510jsn8dde394521f5',
           'X-RapidAPI-Host': 'tripadvisor16.p.rapidapi.com'
         }
       });
