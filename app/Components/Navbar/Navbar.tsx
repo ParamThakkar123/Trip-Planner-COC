@@ -24,7 +24,10 @@ const Navbar = () => {
                         <Link href='/'>Home</Link>
                     </li>
                     <li className='mr-2 hover:bg-white hover:text-black hover:rounded transition-all duration-200 p-2'>
-                        <Link href='/about'>About</Link>
+                        <Link href='/about'>Connect</Link>
+                    </li>
+                    <li className='mr-2 hover:bg-white hover:text-black hover:rounded transition-all duration-200 p-2'>
+                      <Link href='/cottage'>CottageConnect</Link>
                     </li>
                     <li className='mr-2 hover:bg-white hover:text-black hover:rounded transition-all duration-200 p-2'>
                         <Link href='/discover'>Discover</Link>
