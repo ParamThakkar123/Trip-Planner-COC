@@ -15,7 +15,7 @@ const AIwithImage = () => {
         setResponse('');
         const model = genAI.getGenerativeModel({ model: "gemini-pro-vision" });
         const result = await model.generateContent([
-            "What's in this photo?", imageInlineData
+            "What's in this photo? Describe it and make it's itinerary", imageInlineData
         ]);
         const response = await result.response;
         const text = response.text();

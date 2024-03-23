@@ -36,7 +36,9 @@ const Makeplan = () => {
         <Link href='/chatbot'>Ask AI for help in planning your trip</Link>
         <br />
         <div className='flex items-center justify-center mt-4'>
-            <span>Or write a guide</span>
+            <Link href='/chatbot/image'>
+                <span>Or Ask from Image</span>
+            </Link>
         </div>
         </div>
       </form>
