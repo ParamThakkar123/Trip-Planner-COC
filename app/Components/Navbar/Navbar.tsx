@@ -28,7 +28,7 @@ const Navbar = () => {
                         <Link href='/about'>About</Link>
                     </li>
                     <li className='mr-2 hover:bg-white hover:text-black hover:rounded transition-all duration-200 p-2'>
-                      <Link href='/cottage'>Contact</Link>
+                      <Link href='/cottage'>Connect</Link>
                     </li>
                     <li className='mr-2 hover:bg-white hover:text-black hover:rounded transition-all duration-200 p-2'>
                         <Link href='/discover'>Discover</Link>
