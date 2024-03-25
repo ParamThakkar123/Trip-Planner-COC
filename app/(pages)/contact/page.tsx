@@ -13,20 +13,20 @@ const Contact = () => {
                 <h1 className='text-4xl text-center'>Cottage Connect</h1>
                 <div className='flex items-center justify-between gap-10'>
                 <div className='flex flex-col mt-5'>
-                    <label htmlFor="fname" className='text-2xl'>Min Cost</label>
+                    <label htmlFor="fname" className='text-2xl'>Min Price</label>
                     <input type="text" className='mt-3 w-full p-2 bg-transparent border-solid border-2 border-white rounded'/>
                 </div>
                 <div className='flex flex-col mt-5'>
-                    <label htmlFor="lname" className='text-2xl'>Maximum Cost </label>
+                    <label htmlFor="lname" className='text-2xl'>Maximum Price </label>
                     <input type="text" className='mt-3 w-full p-2 bg-transparent border-solid border-2 border-white rounded'/>
                 </div>
                 </div>
                 <div className='flex flex-col mt-5'>
-                    <label htmlFor="email" className='text-2xl'>Location</label>
+                    <label htmlFor="email" className='text-2xl'>Locations</label>
                     <input type="email" className='mt-3 w-full p-2 bg-transparent border-solid border-2 border-white text-white rounded'/>
                 </div>
                 <div className='flex flex-col mt-5'>
-                    <label htmlFor="message" className='text-2xl'>Type of Items</label>
+                    <label htmlFor="message" className='text-2xl'>Type of Products</label>
                     <input type="text" className='mt-3 w-full p-2 bg-transparent border-solid border-2 border-white text-white rounded'/>
                 </div>
                 <div className='flex items-center justify-center mt-5'>
